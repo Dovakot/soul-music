@@ -1,0 +1,57 @@
+.jumbortron {
+  background: url("../img/bg-header-desktop@1x.jpg") no-repeat center bottom, $gradient-header;
+  background-size: cover;
+  min-height: 780px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $font-sm;
+}
+
+.jumbotron__title {
+  margin: 0;
+  padding: 240px 0 10px;
+  font-size: 80px;
+  font-weight: inherit;
+}
+
+.jumbotron__list {
+  @include list-unstyled;
+
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px;
+
+}
+
+.jumbotron__item {
+  &:nth-child(2) {
+    color: $color-yellow;
+  }
+
+  &:not(:last-child)::after {
+    content: "•";
+    display: inline-block;
+    padding: 0 10px;
+    color: #ffffff;
+  }
+}
+
+.jumbortron__link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  color: inherit;
+  border: 1px solid $color-yellow;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $color-yellow;
+  }
+
+  &:active {
+    background-color: #c9b350;
+  }
+}

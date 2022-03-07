@@ -1,0 +1,24 @@
+.footer {
+  border-top: 2px dashed #e4e4e4;
+  color: #ffffff;
+
+  a {
+    color: inherit;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.footer__map > iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: none;
+}

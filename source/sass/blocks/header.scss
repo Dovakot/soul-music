@@ -1,0 +1,44 @@
+.header {
+  font-weight: 600;
+  font-size: $font-xs;
+  color: #ffffff;
+}
+
+.header__information {
+  padding: 5px 0;
+  background-color: $color-yellow;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.header__phone {
+  display: block;
+  padding: 0 0 0 20px;
+  color: inherit;
+  background: url('../img/icon-phone.svg') no-repeat left center;
+  background-size: 15px auto;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
+}

@@ -1,0 +1,22 @@
+.copyright {
+  background-color: $color-default;
+  padding: 10px 0;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.copyright__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright__nav {
+  @include list-unstyled;
+
+  display: flex;
+}
+
+.copyright__item:not(:last-child) {
+  margin: 0 20px 0 0;
+}

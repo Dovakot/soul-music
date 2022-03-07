@@ -1,0 +1,77 @@
+.nav {
+  padding: 12px 0;
+  background-color: #ffffff;
+
+  &--in {
+    .nav__logo img {
+      width: 90px;
+    }
+
+    .nav__container::before {
+      display: none;
+    }
+  }
+}
+
+.nav__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 0 0 0 -194px;
+    width: 364px;
+    height: 102px;
+    background: url('../img/icon-triangle.svg') no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+.nav__logo {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin: 0 0 0 -64px;
+}
+
+.nav__list {
+  @include list-unstyled;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 560px;
+  color: $color-default;
+
+  &:first-of-type {
+    padding: 0 86px 0 0;
+  }
+
+  &:last-of-type {
+    padding: 0 0 0 63px;
+
+  }
+}
+
+.nav__item {
+  text-transform: uppercase;
+
+  a {
+    display: block;
+    color: inherit;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

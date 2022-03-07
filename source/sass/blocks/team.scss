@@ -1,0 +1,119 @@
+.team {
+  padding: 0 0 100px;
+}
+
+.team__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 100px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    margin: 0 30px;
+    display: inherit;
+    border-bottom: 1px solid #e4e4e4;
+    flex-grow: 1;
+  }
+}
+
+.team__list {
+  @include list-unstyled;
+
+  display: flex;
+  justify-content: center;
+}
+
+.team__item {
+  width: 360px;
+  padding: 0 30px;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 100%;
+    border: 1px solid #fefefe;
+  }
+}
+
+.team__wrapper {
+  font-size: $font-xs;
+  text-align: center;
+}
+
+.team__name {
+  margin: 25px 0 15px;
+  font-size: 16px;
+
+  span {
+    color: $color-yellow;
+  }
+}
+
+.team__social {
+  @include list-unstyled;
+
+  display: flex;
+  justify-content: center;
+}
+
+.team__social-item {
+  margin: 0 10px 0 0;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 100%;
+}
+
+.team__text {
+  margin: 0 0 20px;
+}
+
+.team__social-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s;
+
+  &--vk {
+    background: #666666 url('../img/icon-vk-team.svg') no-repeat center center;
+    background-size: 100% auto;
+  }
+
+  &--inst {
+    background: #666666 url('../img/icon-instagram-team.svg') no-repeat center;
+    background-size: 100% auto;
+  }
+
+  &--viber {
+    background: #666666 url('../img/icon-viber-team.svg') no-repeat center;
+    background-size: 100% auto;
+  }
+
+  &--tg {
+    background: #666666 url('../img/icon-telegram-team.svg') no-repeat center;
+    background-size: 100% auto;
+  }
+
+  &--ws {
+    background: #666666 url('../img/icon-whatsapp-team.svg') no-repeat center;
+    background-size: 100% auto;
+  }
+
+  &--skype {
+    background: #666666 url('../img/icon-skype-team.svg') no-repeat center;
+    background-size: 100% auto;
+  }
+
+  &:hover {
+    background-color: $color-yellow;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

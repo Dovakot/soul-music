@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 7px;
+  border: 0;
+  background: rgb(47, 156, 234);
+  background: linear-gradient(-90deg, rgb(47, 156, 234) 0%, rgb(29, 129, 217) 98%);
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 45px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(-90deg, rgb(29, 129, 217) 0%, rgb(29, 129, 217) 98%);
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+  }
+}
